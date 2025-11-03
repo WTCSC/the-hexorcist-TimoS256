@@ -1,7 +1,11 @@
 from hexorcist import to_decimal
 from hexorcist import from_decimal
 import pytest
+"""
+--- test_hexorcist.py ---
+This file contains all unit tests for hexorcist.py, organized into 2 block, one for each major function.
 
+"""
 def test_base10_working():
     assert to_decimal('42',10) == 42
 def test_base16_working():

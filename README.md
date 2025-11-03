@@ -1,1 +1,9 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=21389172)
+## The Hexorcist
+A somewhat simple program that can convert numbers between different base systems between base 2  and 36. 
+
+### Usage:
+Run the **hexorcist.py* py file.
+the program will prompt you with a set of options, from there type the value to convert, the base to convert from, and the base to convert to.
+
+### Testing
+Navigate to the directory or the cloned repo, and run pytest. Its that simple

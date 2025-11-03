@@ -23,7 +23,7 @@ def to_decimal(inp, base):
 def from_decimal(input_str,base):
     base = int(base)
     input_str = int(input_str)
-    if type(input_str) != str:
+    if type(input_str) != int:
         return "input type error"
 
     if type(base) != int or base > 36:
@@ -32,13 +32,13 @@ def from_decimal(input_str,base):
     remainder = 0
     char = ''
     if int(input_str) == 0:
-        return 0
+        return '0'
     while input_str > 0:
         remainder = input_str % base
         input_str = input_str // base
         char = digits[remainder]
         out = char + out
-    return out
+    return str(out)
 
 def main():
     while True:
@@ -53,4 +53,5 @@ def main():
         else:
             print("I'm not dealing with your crap today. Get out.")
             quit()
-main()
+if __name__ == '__main__':
+    main()
